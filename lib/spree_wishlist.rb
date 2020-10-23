@@ -1,0 +1,6 @@
+require 'spree_backend'
+require 'spree_core'
+require 'spree_extension'
+require 'spree_wishlist/engine'
+require 'spree_wishlist/version'
+require 'deface'
