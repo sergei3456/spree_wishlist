@@ -20,8 +20,8 @@ module Spree
       respond_to do |format|
         format.json do
           render json: {
-              link: wishlist_url(@wishlist),
-              count: Spree::WishedProduct.where('wishlist_id', @wishlist.id).count
+            link: wishlist_url(@wishlist),
+            count: Spree::WishedProduct.where(wishlist_id: @wishlist.id).count
           }
         end
       end
